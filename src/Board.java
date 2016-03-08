@@ -28,4 +28,4 @@ public class Board {
 		throw new UnsupportedOperationException();
 	}
 
-};
+}

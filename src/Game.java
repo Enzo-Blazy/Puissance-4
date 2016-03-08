@@ -13,4 +13,4 @@ public class Game {
 		throw new UnsupportedOperationException();
 	}
 
-};
+}

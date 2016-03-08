@@ -9,4 +9,4 @@ public class Piece {
 		piece = choice;
 	}
 
-};
+}
