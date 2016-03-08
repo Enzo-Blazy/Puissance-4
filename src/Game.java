@@ -1,8 +1,7 @@
 public class Game {
 
-	private char Player;
-	private string Winner;
-	private string Loser;
+	private Player player1;
+
 
 	public Game() {
 		// TODO - implement Game.Game

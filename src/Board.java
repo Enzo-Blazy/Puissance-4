@@ -1,11 +1,11 @@
-public class Grill {
+public class Board {
 
 	private int x;
 	private int y;
 	public int DEFAULT_X = 6;
 	public int DEFAULT_Y = 5;
 
-	public Grill() {
+	public Board() {
 
 	}
 
@@ -14,7 +14,7 @@ public class Grill {
 	 * @param DEFAULT_X
 	 * @param DEFAULT_Y
 	 */
-	private Grill(int DEFAULT_X, int DEFAULT_Y) {
+	private Board(int DEFAULT_X, int DEFAULT_Y) {
 
 	}
 
