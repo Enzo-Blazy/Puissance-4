@@ -28,4 +28,4 @@ public class Grill {
 		throw new UnsupportedOperationException();
 	}
 
-}
+};

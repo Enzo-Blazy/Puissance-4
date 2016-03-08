@@ -20,4 +20,4 @@ public class Player {
 		throw new UnsupportedOperationException();
 	}
 
-}
+};

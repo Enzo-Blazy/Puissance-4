@@ -8,4 +8,4 @@ public class Piece {
 		throw new UnsupportedOperationException();
 	}
 
-}
+};
