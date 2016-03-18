@@ -13,6 +13,7 @@ public class Connect4 {
      * @param args TODO
      */
     public static void main(final String... args) {
-        // TODO
+        Game game = new Game();
+        game.start();
     }
 }

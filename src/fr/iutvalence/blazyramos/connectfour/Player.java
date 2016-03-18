@@ -7,14 +7,13 @@ package fr.iutvalence.blazyramos.connectfour;
  * @version TODO
  */
 public class Player {
-    // TODO fr.iutvalence.blazyramos.connectfour.Piece or char?
     /** TODO. */
-    private final Piece  piece;
+    private final char  piece;
     /** TODO. */
     private final String name;
 
     /** TODO. */
-    public Player(String name, Piece piece) {
+    public Player(String name, char piece) {
         this.name = name;
         this.piece = piece;
     }
@@ -24,7 +23,7 @@ public class Player {
      *
      * @return TODO
      */
-    public Piece getPiece() {
+    public char getPiece() {
         return this.piece;
     }
 }

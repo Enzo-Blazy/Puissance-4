@@ -14,13 +14,16 @@ public class Board {
     /** TODO. */
     public int DEFAULT_Y = 5;
     /** TODO. */
-    private int x;
+    private int width;
     /** TODO. */
-    private int y;
+    private int height;
 
-    /** TODO. */
-    public Board() {
-
+    private int [][] grid;
+    
+    /** TODO. */ 
+    public Board(int [][] grid)
+    {
+   
     }
 
     /**
