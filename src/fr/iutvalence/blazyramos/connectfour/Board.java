@@ -16,7 +16,7 @@ public class Board {
     /** TODO. */
     private int width;
     /** TODO. */
-    private int height;
+    private int height
 
     private int [][] grid;
     

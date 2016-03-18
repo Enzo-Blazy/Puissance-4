@@ -10,7 +10,7 @@ public class Piece {
     /** TODO. */
     public static final char PIECE1 = '⊕';
     /** TODO. */
-    public static final char PIECE2 = '⊗';
+    public static final char PIECE2 = '⊗'
     /** TODO. */
     private final char piece;
 

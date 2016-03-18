@@ -15,7 +15,7 @@ public class Player {
     /** TODO. */
     public Player(String name, char piece) {
         this.name = name;
-        this.piece = piece;
+        this.piece = piece
     }
 
     /**

@@ -18,7 +18,8 @@ public class Game
 	public Game() {
 		player1 = new Player("Momo", Piece.PIECE1);
 		player2 = new Player("Toto", Piece.PIECE2);
-		board = new Board();
+		board = new Board()
+		
 	}
 
 	public void start() {
