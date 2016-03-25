@@ -7,32 +7,26 @@ package fr.iutvalence.blazyramos.connectfour;
  * @version TODO
  */
 public class Board {
-    // TODO constant?
     /** TODO. */
-    public int DEFAULT_X = 6;
-    // TODO constant?
+    public static final int WIDTH = 6;
     /** TODO. */
-    public int DEFAULT_Y = 5;
+    public static final int HEIGHT = 5;
     /** TODO. */
-    private int width;
-    /** TODO. */
-    private int height
-
-    private int [][] grid;
+    private final Piece[][] board;
+	
     
-    /** TODO. */ 
-    public Board(int [][] grid)
-    {
-   
-    }
-
-    /**
-     * TODO.
-     *
-     * @param DEFAULT_X TODO
-     * @param DEFAULT_Y TODO
-     */
-    private Board(int DEFAULT_X, int DEFAULT_Y) {
-
-    }
+	public Board() {
+		board = new Piece[WIDTH][HEIGHT];
+	}
+	
+	public void print() {
+		for ( int i=0; i<WIDTH;i++)
+		{
+			for (int j=0;j<HEIGHT;j++)
+			{
+				//board [i][j]= null   ;
+			}
+		}
+		System.out.println(board[WIDTH-1][HEIGHT-1]);
+	}
 }
