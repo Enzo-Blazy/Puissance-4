@@ -23,4 +23,10 @@ public class Piece {
         // TODO Check the validity of the "choice" parameter.
         piece = choice;
     }
+    
+    @Override
+    public  String toString()
+    {
+    	return String.valueOf(piece);
+    }
 }
