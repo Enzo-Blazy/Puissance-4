@@ -11,6 +11,8 @@ public class Player {
     private final char  piece;
     /** TODO. */
     private final String name;
+    
+    public char CurrentPlayer;
 
     /** TODO. */
     public Player(String name, char piece) {

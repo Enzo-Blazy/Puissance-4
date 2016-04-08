@@ -28,22 +28,18 @@ public class Game
 
 	public void start() {
 		System.out.printf("New game: %s vs. %s\n",player1.name(), player2.name()) ;
-		//while (!victory()) {
+		//while (!victory()) 
 			// Algo :
-				/* 1 = Afficher la board 
-				 * 2= Joueur courant identifié par sa piece*
-				 * 3= Joueur place son pion 
-				 * 4= On vérifie si son coup est possible 
-				 *    Si coup est possible alors passer au joueur 2
-				 *    Sinon recommencer tour
+				/* 1 = Afficher la board*/
+				   {board.print();
+				 /* 2= Joueur courant identifié par sa piece*/
+			 			/* 3= Vérifie le coup  
+				 * 4= Joueur place le pion
+				 *    
+				 *    
 		         */
-				board.print();
-				
-				
-		//}
 		
-	}
-	
+				
 	private boolean victory() {
 		// TODO Auto-generated method stub
 		return false;
