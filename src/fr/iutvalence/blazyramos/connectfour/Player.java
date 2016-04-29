@@ -12,7 +12,7 @@ public class Player {
     /** TODO. */
     private final String name;
     
-    public char CurrentPlayer;
+
 
     /** TODO. */
     public Player(String name, char piece) {

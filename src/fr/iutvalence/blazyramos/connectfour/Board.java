@@ -17,15 +17,7 @@ public class Board {
 
 	public Board() {
 		board = new Piece[WIDTH][HEIGHT];
-		for(int i=0;i<WIDTH;i++)
-		{
-
-			for (int j=0;j<HEIGHT;j++)
-			{
-				board[i][j]=new Piece(Piece.PIECE1);
-			}
-
-		}
+		//	board[i][j]=new Piece(Piece.PIECE1);
 	}
 
 	public void print() {
@@ -38,5 +30,10 @@ public class Board {
 			System.out.println("|");
 		}
 		System.out.println("-----------------");
+	}
+
+	public void putPiece(int column, char piece) {
+		
+		   
 	}
 }
