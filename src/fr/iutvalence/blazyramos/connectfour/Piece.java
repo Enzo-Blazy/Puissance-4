@@ -8,9 +8,9 @@ package fr.iutvalence.blazyramos.connectfour;
  */
 public class Piece {
     /** TODO. */
-    public static final char PIECE1 = '⊕';
+    public static final char PIECE1 = 'X';
     /** TODO. */
-    public static final char PIECE2 = '⊗';
+    public static final char PIECE2 = 'O';
     /** TODO. */
     private final char piece;
 
