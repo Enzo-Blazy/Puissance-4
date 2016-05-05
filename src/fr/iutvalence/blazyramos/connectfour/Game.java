@@ -36,29 +36,32 @@ public class Game
 			// Algo :
 				/* 1 = Afficher la board*/
 				   board.print();
-				 /* 2= Joueur courant identifié par sa piece*/
+				 /* 2= Joueur courant identifi2 par sa piece*/
 				   Scanner column = new Scanner(System.in);
-				   System.out.println("Veuillez saisir le numéros de colonne :");
+				   System.out.println("Choose a column number:");
 				   int str = column.nextInt();
-				   System.out.println("Vous avez saisi la colonne : " + str);
+				   System.out.println("You choosed the column number : " + str);
 				   
 				   
-		 		   // Vérifier que colonne c'est bien dans la grille.
+		 		   // Verifier que colonne est bien dans la grille et v�rification de la place disponible
 				  	board.putPiece(str, player.getPiece());
 				   if (player == player1) {
-				   player = player2;   
+					   player = player2;   
 			   }
 			   else {
-				   player=player1;
-			   }}
+				   	   player = player1;
+			        }
+				  
+		}
+		         
 				   
 	}
 
-	private boolean victory() {
+	/*private boolean victory() {
 		for()
 		// TODO Auto-generated method stub
 		return false;
-	}
+	}*/
 	
 	
 }

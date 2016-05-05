@@ -1,5 +1,8 @@
 package fr.iutvalence.blazyramos.connectfour;
 
+import java.io.PrintStream;
+import java.util.Scanner;
+
 /**
  * TODO.
  *
@@ -34,7 +37,7 @@ public class Board {
 			}
 			System.out.println("|");
 		}
-		System.out.println("-----------------");
+		System.out.println("------------------------------");
 	}
 
 	public void putPiece(int column, char piece) {
@@ -44,8 +47,17 @@ public class Board {
 				return;
 			}
 		}
-		// TODO Problème la colonne est pleine
-		
-		   
 	}
+	public boolean isFull(int column) {
+		for (int i=HEIGHT-1;i>=0; i--){
+			if(board[i][column] != null){
+			  System.out.printf("The selected column is full");
+			  return false;
+			  
+			}
+		}
+		return false;
+		
+	}
+	
 }
