@@ -58,6 +58,17 @@ public class Board {
 			if(!isFullColumn(column)){
 				 System.out.println("The board is not full");
 				 //TODO Other columns
+		for (i=column-1; i>= 0; i++){
+			if(isFullColumn(column)){
+				column= column+1;
+					i++;
+					if(isFullColumn(column)){
+						column = 7;
+							System.err.println("The board is full");
+						
+					}
+			}
+		}
 		}
 	
 	}
