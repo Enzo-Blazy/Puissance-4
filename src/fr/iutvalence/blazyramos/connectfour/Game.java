@@ -16,6 +16,7 @@ public class Game
 	private Player player2;
 	/** TODO. */
 	private Board board;
+	private Scanner column;
 	
 	// TODO Joueur courant.
 	// TODO Tour de jeu (nombre).
@@ -36,8 +37,7 @@ public class Game
 			// Algo :
 				/* 1 = Afficher la board*/
 				   board.print();
-				 /* 2= Joueur courant identifi2 par sa piece*/
-				   Scanner column = new Scanner(System.in);
+				   column = new Scanner(System.in);
 				   System.out.println("Choose a column number:");
 				   int str = column.nextInt();
 				   System.out.println("You choosed the column number : " + str);
@@ -51,6 +51,7 @@ public class Game
 			   else {
 				   	   player = player1;
 			        }
+		  
 				  
 		}
 		         
