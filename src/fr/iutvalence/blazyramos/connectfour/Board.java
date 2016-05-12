@@ -1,27 +1,20 @@
 package fr.iutvalence.blazyramos.connectfour;
 
-import java.io.PrintStream;
-import java.util.Scanner;
-
 /**
- * TODO.
- *
- * @author TODO
- * @version TODO
+ * Authors: Cyril Ramos, Enzo Blazy	
  */
 public class Board {
-	/** TODO. */
+	
 	public static final int HEIGHT = 6;
-	/** TODO. */
+	
 	public static final int WIDTH = 7;
-	/** TODO. */
+	
 	private Piece[][] board;
 	
 
 
 	public Board() {
 		board = new Piece[HEIGHT][WIDTH];
-		//	board[i][j]=new Piece(Piece.PIECE1);
 	}
 
 	public void print() {
@@ -44,20 +37,30 @@ public class Board {
 		for (int i=HEIGHT-1;i>=0; i--){
 			if(board[i][column] == null){
 				board [i][column] = new Piece(piece);	
+				// TODO Implement victory
+				
 				return;
 			}
 		}
 	}
-	public boolean isFull(int column) {
-		for (int i=HEIGHT-1;i>=0; i--){
-			if(board[i][column] != null){
-			  System.out.printf("The selected column is full");
-			  return false;
-			  
-			}
-		}
-		return false;
-		
-	}
 	
+	public boolean isFullColumn (int column){
+		return board[0][column] != null; 
+	}
+
+	public boolean isVictory() {
+		
+		return false;
+	}
+
+	public void isFull(int column) {
+		for (int i=HEIGHT-1;i>=0; i++){
+			if(!isFullColumn(column)){
+				 System.out.println("The board is not full");
+				 //TODO Other columns
+		}
+	
+	}
+	}
 }
+
