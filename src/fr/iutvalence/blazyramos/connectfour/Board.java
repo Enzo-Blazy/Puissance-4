@@ -53,14 +53,20 @@ public class Board {
 		return false;
 	}
 
-	public void isFull(int column) {
+	public boolean isFull(int column) {
 		for (int i=HEIGHT-1;i>=0; i++){
 			if(!isFullColumn(column)){
 				 System.out.println("The board is not full");
 				 //TODO Other columns
+			   
+			    	
+			    		 
+				
+			}
+				
 		}
+		return false;
 	
 	}
 	}
-}
 
