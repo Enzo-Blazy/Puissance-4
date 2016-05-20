@@ -12,6 +12,8 @@ public class Game
 	private Player player2;
 	
 	private Board board;
+	
+	private Scanner column;
 
 	
 	public Game() {
@@ -30,14 +32,32 @@ public class Game
 		for (int i = 0; i < 999; i++) {
 			//while (!victory()) 
 			// Algo :
+				/* 1 = Afficher la board*/
+				   board.print();
+				   column = new Scanner(System.in);
+				   System.out.println("Choose a column number:");
+				   int str = column.nextInt();
+				   System.out.println("You choosed the column number : " + str);
+				   
+				   
+		 		   // Verifier que colonne est bien dans la grille et v�rification de la place disponible
+				  	board.putPiece(str, player.getPiece());
+				   if (player == player1) {
+					   player = player2;   
+			   }
+			   else {
+				   	   player = player1;
+			        }
+		  
+			
 			/* 1 = Afficher la board*/
 			board.print();
-			/* 2= Joueur courant identifié par sa piece*/
+			/* 2= Joueur courant identifie par sa piece*/
 			System.out.println("Choose a column number:");
 			int col = scanner.nextInt();
 			System.out.println("You choosed the column number : " + col);
 
-			// Vérification de la place dans la colone et positionnement du pion
+			// Verification de la place dans la colone et positionnement du pion
 			if (!board.isFullColumn(col)) {
 				board.putPiece(col, player.getPiece());
 				if (player == player1) {
@@ -50,8 +70,12 @@ public class Game
 			else {
 				System.err.println("The selected column is full"); //Message d'erreur
 				
+				
 			}
-
+			else (board.isFull(column)){
+				System.err.println("The selected column is full");
+				
+			}
 		}
 		scanner.close();
 
