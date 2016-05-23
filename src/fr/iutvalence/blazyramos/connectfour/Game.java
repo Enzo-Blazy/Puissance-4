@@ -22,36 +22,44 @@ public class Game
 	}
 
 	public void start() {
+		
 		Scanner scanner = new Scanner(System.in);
-
 		System.out.printf("New game: %s vs. %s\n",player1.name(), player2.name()) ;
 		Player player = player1;
 
-		while (!victory()) 
+		while (!victory()) {
+			
 			board.print();
-
 			System.out.println("Choose a column number:");
 			int col = scanner.nextInt();
 			System.out.println("You choosed the column number : " + col);
 
-			// TODO Vérifier colonne				
+			// TODO Vérifier colonne		
+			if(col>6){
+				System.err.println("The selected column is full");	
+			}
+			else{
 			if (!board.isFullColumn(col)){
 				board.putPiece(col, player.getPiece());
-				if (player == player1) {
-					player = player2;   
+					if (player == player1) {
+							player = player2;   
+							}
+					else {
+						player = player1;
+						}
 				}
 				else {
-					player = player1;
+					System.err.println("The selected column is full");
+	
 				}
-			}
-			else {
-				System.err.println("The selected column is full");
-
-			}
+		
+	
+		}	
+		}
+			scanner.close();
+		}
 			
 		
-		scanner.close();
-			}
 
 private boolean victory() {
 		return board.isVictory() || board.isFull();
