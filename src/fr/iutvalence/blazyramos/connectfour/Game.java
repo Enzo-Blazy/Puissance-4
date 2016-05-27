@@ -23,7 +23,7 @@ public class Game
 
 	public void start() {
 		
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);// create a keyboard enter
 		System.out.printf("New game: %s vs. %s\n",player1.name(), player2.name()) ;
 		Player player = player1;
 
@@ -33,11 +33,11 @@ public class Game
 			System.out.println("Choose a column number:");
 			int col = scanner.nextInt();
 			System.out.println("You choosed the column number : " + col);
-
-			// TODO Vérifier colonne		
+		
 			if(col>6){
-				System.err.println("The selected column is full");	
+				System.out.println("Wrong column number");	 
 			}
+			// Check if player enter right column's number
 			else{
 			if (!board.isFullColumn(col)){
 				board.putPiece(col, player.getPiece());

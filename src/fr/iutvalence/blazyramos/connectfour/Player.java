@@ -11,7 +11,7 @@ public class Player {
     
 
 
- 
+
     public Player(String name, char piece) {
         this.name = name;
         this.piece = piece;
